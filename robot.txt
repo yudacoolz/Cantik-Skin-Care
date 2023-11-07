@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /sukses.html
+Disallow: /gagal.html
+Disallow: /proses.php

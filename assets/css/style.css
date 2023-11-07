@@ -1,0 +1,1102 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    padding-top: 110px; /*supaya tulisan di bawah position fixed bisa kelihatan. dan 10px di atas max height header*/
+    /* padding: 110px 50px 30px; */
+}
+
+.padding{
+    padding: 50px 0px;
+}
+
+.bg-grey{
+    background-color:#cecece;
+    height: 130px;
+}
+
+.bg-white{
+    background-color:#ffffff;
+    height: 100px;  
+}
+
+.bg-white .garis{
+    border-top: 1px solid #cecece;
+    margin-top: 20px;
+    
+}
+.header{
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    background-color: rgb(32, 32, 32);
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    color: white;
+    box-shadow: 0px 2px 30px rgb(53, 53, 53);
+	padding-bottom:10px;
+    transition: .3s;
+}
+
+.header-medsos{
+    /* text-align: center; */
+    /* background-color: blue; */
+    display: none;
+    
+   
+}
+.header-medsos a{
+	font-size: 30px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.header-medsos a.ig{
+	color:#FF2286;
+}
+
+.header-medsos a.ig:hover{
+	color:#CC025D;
+}
+
+
+
+.logo{
+    height: 44px;
+}
+
+.logos img{
+	width: 60px;
+	border-radius: 50%;
+	display: none;
+	
+}
+
+.logo-medsos{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0px 10px;
+	text-align: center;
+    display: none;
+}
+
+.logo-search{
+    padding-right: 60px;
+}
+
+.btn-logo{
+    background-color: rgb(121, 121, 121);
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-logo:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(32, 32, 32);
+    
+}
+
+.fixtop{
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	background-color:#FFFFFF;
+	padding: 10px 0px;
+	border-bottom: solid 1px #cecece;
+	box-shadow: 0px 1px 4px #cecece;
+}
+
+.fixtop .megamenu li a{
+	color:#FFFFFF;
+	}
+
+
+.cari{
+	display: none;
+}
+
+/* H1  */
+.judul{
+    text-align: center;
+    padding: 32px 64px;
+    border-bottom: 1px solid #cecece;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* end H1 */
+
+/* image hover  */
+.box-image {
+    position: relative;
+    
+  }
+  
+  .image {
+    opacity: 1;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 30px 20px;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .box-image:hover .image {
+    opacity: 0.3;
+  }
+  
+  .box-image:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .text:hover {
+      background-color: rgb(245, 245, 245);
+      color: black;
+  }
+/* end image hover */
+
+/* group about */
+.pad-about{
+    padding: 20px;
+    text-align: center;
+}
+
+.pad-about img{
+    padding: 0px 20px;
+}
+
+.pad-about span{
+    color: #89ABE3FF;
+    font-size: 12px;
+}
+
+.pad-about h3{
+    font-weight: bold;
+}
+
+.pad-about p{
+    color: #cecece;
+}
+/* end group about */
+
+/* start member */
+.member{
+    
+}
+
+.member h3{
+    padding: 50px 0px 20px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bold;
+    
+}
+
+.garis-member{
+    border-bottom: 1px solid #cecece;
+    padding-bottom:15px;
+    margin-bottom:15px;
+
+}
+
+.member p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+.endors{
+    border-radius: 50%;
+    padding: 20%;
+}
+
+.staff{
+    color: black;
+    text-align: center;
+    
+    height: auto;
+    padding: 0px 10px;
+}
+
+.staff h4{
+   font-family: cursive;
+   
+}
+
+.staff h6{
+    font-family: cursive,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 20px;
+    
+ }
+
+.staff span{
+    
+    font-family: monospace;
+    font-size: 12px;
+    text-align: justify;
+    
+    
+ }
+
+
+/* end member */
+
+/* group slide */ 
+
+
+.slide-desc{
+    width: 80%;
+    /* background-color:rgba(29, 29, 29,.2); */
+    top: 30%;
+    left: 10%;
+    padding: 10px;
+    position: absolute;
+    color: rgb(233, 233, 233);
+
+}
+
+.slide-desc.hitam{
+    
+    color: rgb(24, 24, 24);
+
+}
+
+.slide-desc h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+}
+
+.slide-desc h4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.slide-desc.service{
+    width: 35%;
+    /* background-color:rgba(29, 29, 29,.2); */
+    top: 30%;
+    left: 35%;
+    padding: 10px;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    /* background-color: black; */
+    text-align: center;
+
+}
+
+.slideigd-desc{
+    width: 70%;
+    /* background-color:rgba(29, 29, 29,.2); */
+    top: 30%;
+    left: 15%;
+    padding: 10px;
+    position: absolute;
+    color: rgb(17, 17, 17);
+    text-align: center;
+}
+
+.slideigd-desc h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+
+.slideigd-desc h4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+/* end group slide */
+/* group txtseo */
+
+.txtseo{
+    text-align: center;
+    padding: 30px 40px;
+    
+}
+
+.txtseo h1{
+    color: #89ABE3FF;
+    font-family: garamond;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+.txtseo.about h1{
+    color: rgb(43, 43, 43);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.txtseo p{
+    text-align: justify;
+       
+}
+
+.txtigd{
+     text-align: center;
+    padding: 30px 40px;
+}
+
+.txtigd h1{
+    color: rgb(18, 19, 20);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    
+
+}
+
+.txtigd p{
+    text-align: justify;
+       
+}
+
+.txtigd span{
+    border-bottom: solid 1px #cecece;
+	padding-bottom:13px;
+}
+
+/* end group txtseo */
+/* group paket */
+
+.paket{
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+    height: auto;
+    transition: 0.5s;
+    
+}
+
+.paket:hover{
+    box-shadow: 0px 0px 5px rgb(87, 87, 87);
+    /* cursor: pointer; */
+    
+}
+/* end group paket */
+
+/* start group igd */
+.igd{
+    padding: 10px;
+}
+
+
+.igd i{
+    color: rgb(93, 211, 63);
+    font-size: 50px;
+    padding-top: 40px;
+}
+
+
+.igd span{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.igd p{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* end group igd */
+
+.inner-foto-1{
+    position: relative;
+}
+
+/* .inner-foto-1 button{
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    width: auto;
+    background-color: rgb(233, 233, 233);
+    font-size: 16px;
+    padding: 10px;
+    margin: 0px;
+    color: black;
+    border-radius: 5px;
+    
+} */
+
+.inner-foto-1 a.box-men{
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    width: 145px;
+    height: 50px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.inner-foto-1 a.box-men:hover{
+    color: white;
+    background-color: rgb(39, 39, 39);
+}
+
+.inner-foto-1 a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.inner-foto-1 h3{
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    width: 20%;
+    color: white;
+}
+
+.inner-foto-1 p{
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    background-color: rgba(121, 121, 121,.5);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.inner-foto-1 p:hover{
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+}
+
+
+.inner-foto-2{
+    position: relative;
+}
+
+.inner-foto-2 a.box-women{
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    width: 145px;
+    height: 50px;
+    background-color: #ecb54f;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.inner-foto-2 a.box-women:hover{
+    color: rgb(247, 223, 9);
+    background-color: rgb(39, 39, 39);
+}
+
+.inner-foto-2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.inner-foto-2 h3{
+    position: absolute;
+    top: 12%;
+    right: 8%;
+    width: auto;
+    color: white;
+}
+
+.inner-foto-2 p{
+    position: absolute;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    background-color: rgba(121, 121, 121,.5);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.inner-foto-2 p:hover{
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+}
+
+/* start paket index */
+.paket-2{
+    background-color: rgb(240, 240, 240);
+    padding: 5px;
+    margin-top: 30px;
+    height: 300px;
+    transition: 0.5s;
+}
+
+.paket-2:hover{
+    box-shadow: 0px 0px 5px rgb(87, 87, 87);
+    /* cursor: pointer; */
+    
+}
+
+.paket-2 h3{
+    position: absolute;
+    width: auto;
+    top: 40%;
+    left: 30%;
+    margin: 0px;
+}
+
+.paket-2 a.box-paket{
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    width: 145px;
+    height: 50px;
+    background-color: rgba(241, 241, 241, 0.9);
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid black;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.paket-2 a.box-paket:hover{
+    color: rgb(231, 231, 231);
+    background-color: rgb(27, 27, 27);
+    opacity: 90%;
+}
+
+.paket-2 a{
+    
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* end paket index */
+/* start paket service */
+.paket-service{
+    background-color: rgb(240, 240, 240);
+    margin-top: 30px;
+    height: 600px;
+    transition: 0.5s;
+}
+
+.paket-service:hover{
+    box-shadow: 0px 0px 5px rgb(87, 87, 87);
+    /* cursor: pointer; */
+    
+}
+
+.paket-service h3{
+    color: #89ABE3FF;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.paket-service button{
+    margin: 20px 175px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+    background-color: #89ABE3FF;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.paket-service img{
+    border-radius: 50%;
+    width: 70%;
+    margin: 15px 16%;
+}
+
+.paket-service p{
+    display: none;
+    padding: 10px 30px 20px;
+    text-align: justify;
+}
+
+.paket-service h4{
+    display: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 50px 20px 0px;
+    color: #7b98d6;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.paket-service a{
+    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: sans-serif;
+    
+}
+.paket-service button:hover{
+    opacity: 90%;
+    text-decoration: underline;
+}
+
+.paket-service a:hover{
+    
+    color: black;
+    
+}
+/* end paket service */
+.produk{
+    border-bottom: 1px solid rgb(168, 168, 168);
+    padding-bottom: 20px;
+}
+
+.produk h3{
+    padding: 50px 0px 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.produk p{
+    text-align: center;
+    font-family: monospace;
+    color: grey;
+}
+
+.produk-relative{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.produk-relative h6{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgba(196, 196, 196,.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 0px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.produk-relative h6:hover{
+    background-color: rgba(255, 255, 255,.9);
+    color: black;
+}
+
+
+.font-size{
+    font-size: 12px;
+    margin-bottom: 30px;
+    color: rgb(17, 190, 17);
+}
+
+.font-size .current-price{
+	color:#409D00;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.font-size .produk-harga{
+	color:#FF0000;
+	text-decoration: line-through;
+    margin-left: 20px;
+}
+
+
+
+.diskon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    left: 10px;
+}
+
+.footer{
+    border-bottom: 1px solid rgb(177, 177, 177);
+    border-top: 1px solid rgb(177, 177, 177);
+    text-align: center;
+    
+}
+
+.footer h6{
+    color: rgb(148, 148, 148);
+    padding: 40px 0px 20px;
+    text-align: center;
+}
+
+.footer img{
+   margin-left: 110px;
+}
+
+
+
+.footer ul{
+    list-style-type: none;
+    padding: 0px;
+    /* margin: 0px; */
+    cursor: pointer; 
+}
+
+.footer li a{
+  
+    color: black;
+    text-decoration: none;
+}
+
+.form-produk{
+    width: 100%;
+}
+
+.copyright{
+    height: 170px;
+}
+
+.whatsapp{
+    position: relative;
+    width: auto;
+    
+}
+
+.whatsapp img{
+    position: fixed;
+    bottom: 170px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.whatsapp a{
+    position: fixed;
+    bottom: 170px;
+    right: 4%;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 8px;
+    background-color: #4adb3d;
+    border: 1px solid rgb(86, 221, 131);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: none;
+}
+
+
+.box-iklan{
+	width: 80%;
+	height: 90px;
+	position: fixed;
+	background-color: #9B9B9B;
+	left: 10%;
+	bottom: 25px;
+	display: none;
+}
+
+.close{
+	width: 40px;
+	height: 40px;
+	background-color: #eb4545;
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	border-radius: 50%;
+	cursor: pointer;
+    
+}
+
+.close i{
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+@media(min-width:576px)
+	{
+
+        .header{
+            padding-top: 0px; 
+        }
+        .header-medsos{
+            text-align: center;
+            display: inline-block;
+        }
+        
+        .paket-service button{
+            margin: 20px 70px;
+            
+        }
+    }
+
+@media(min-width:768px)
+{
+
+    body{
+       
+        padding-top: 90px; /*supaya tulisan di bawah position fixed bisa kelihatan. dan 10px di atas max height header*/
+    }
+	.header-medsos{
+		text-align: right;
+	}
+	.fixtop .megamenu li a{
+	color:#1d1d1d;
+	}
+	
+	.cari{
+	display: block;
+	}
+	
+	.logo-medsos{
+        cursor: pointer;
+        font-size: 20px;
+        padding: 0px 10px;
+        text-align: center;
+		text-align: left;
+        display: block;
+	}
+	
+	.logos img{
+	
+	display: block;
+    }
+	
+	.mymenu{
+    justify-content: flex-start;
+    font-size: 16px;
+	}
+	
+	.slide{
+        height: 550px;
+    }
+    
+    .slide-desc{
+        width: 30%;
+        /* background-color:rgba(29, 29, 29,.2); */
+        top: 30%;
+        left: 10%;
+        padding: 10px;
+        position: absolute;
+        color: rgb(214, 214, 214);
+        text-align: center;
+    }
+    
+    .slide-desc h2{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 50px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .slide-desc h4{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 20px;
+    }
+
+    .slideigd-desc{
+        width: 30%;
+        /* background-color:rgba(29, 29, 29,.2); */
+        top: 30%;
+        left: 35%;
+        padding: 10px;
+        position: absolute;
+        color: rgb(17, 17, 17);
+        text-align: center;
+    }
+    
+    .slideigd-desc h2{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 50px;
+        margin-bottom: 10px;
+        
+    }
+    
+    .slideigd-desc h4{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 20px;
+    }
+
+    .txtseo{
+        padding: 30px 130px;
+    }
+    
+    .txtseo h1{
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    
+    
+    .txtseo.about h1{
+        font-size: 50px;
+    }
+    
+    .txtseo p{
+        text-align: center; 
+    }
+    
+    .txtigd{
+        text-align: center;
+        padding: 30px 130px;
+    }
+    
+    .txtigd h1{
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .txtigd p{
+        text-align: center;
+    }
+
+    .paket-service {
+        
+        height: 300px;
+    }
+
+    .paket-service h3{
+        
+        font-size: 19px;
+    }
+
+    .paket-service button{
+        margin: 20px 25px;
+    }
+
+    .paket-service p{
+        padding: 5px;
+        font-size: 12px;
+
+    }
+
+    .footer{
+        text-align: left;
+        
+    }
+    .footer h6{
+        text-align: left;
+        
+    }
+
+    .footer img{
+        margin-left: 0px;
+     }
+
+     .form-produk{
+        width: 90%;
+    }
+
+     .wa{
+        
+        bottom: 50px;
+        right: 50px;
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    .pad-about{
+        padding: 50px 200px;
+        text-align: left;
+    }
+    
+    .pad-about img{
+        padding: 0px 20px;
+    }
+    
+    .pad-about span{
+        color: #89ABE3FF;
+        font-size: 12px;
+    }
+    
+    .pad-about h3{
+        font-weight: bold;
+    }
+    
+    .pad-about p{
+        color: #cecece;
+    }
+
+    
+}
+
+@media(min-width:992px)
+{
+
+    .paket-service {
+        
+        height: 600px;
+    }
+
+    .paket-service h3{
+        
+        font-size: 25px;
+    }
+
+
+    .paket-service p{
+        padding: 50px 20px;
+        font-size: 16px;
+
+    }
+
+    .paket-service button{
+        margin: 20px 150px;
+        
+    }
+}
